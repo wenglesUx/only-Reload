@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useless</title>
+    <style>
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction: column;
+            gap: 1rem;
+            height: 100vh;
+            background-color: #ccc;
+        }
+        .container{
+            background-color: brown;
+            height: 300px;
+            width:300px;
+            border-radius: 50%;
+
+        }
+        .body{
+            height:100%;
+            width:100%;
+            position:relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .line{
+            height: 100%;
+            width:1px;
+            background-color:transparent;
+            position: relative;
+            
+            
+        }
+          #obj{
+            width: 20px;
+            height: 20px;
+            background-color:#fff;
+            border-radius: 50%;
+            position: absolute;
+            right: -10px;
+             
+
+        }
+        #id1{
+             transform:rotate(-180deg);
+            
+            
+        }
+        #id2{
+            transform:rotate(90deg);
+        
+        }
+         #id3{
+            transform:rotate(135deg)
+        }
+         #id4{
+            transform:rotate(-135deg)
+        }
+      
+        .obj1{
+            animation: act 1.7s ease-in-out 
+        }
+        .obj2{
+            animation: act 2.1s  ease-in-out  
+        }
+        .obj3{
+            animation: act 1.9s ease-in-out  
+        }
+        .obj4{
+            animation: act 1.5s  ease-in-out  
+        }
+
+        .obj5{
+            animation: act 1.8s  ease-in-out  
+        }
+        .obj6{
+            animation: act  1.6s ease-in-out 
+        }
+        .obj7{
+            animation: act 2s ease-in-out  
+        }
+        .obj8{
+            animation: act 2.2s ease-in-out  
+        }
+
+        #id5{
+             transform:rotate(-205deg);
+            
+        }
+        #id6{
+            transform:rotate(200deg)
+        }
+        #id7{
+            transform:rotate(110deg);
+           
+        }
+        #id8{
+            transform:rotate(-290deg)
+        }
+      
+        
+        @keyframes act {
+            0%{margin-top: 0;}
+             50%{margin-top: 300px;}
+            100%{margin-top: 0;}
+            
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+        <div class="body">
+            <div class="line" id="id1">
+                <div id="obj" class="obj1"></div>
+            </div>
+             <div class="line" id="id2">
+                 <div id="obj"class="obj2"></div>
+             </div>
+              <div class="line" id="id3">
+                 <div id="obj"class="obj3"></div>
+              </div>
+               <div class="line" id="id4">
+                 <div id="obj"class="obj4"></div>
+               </div>
+
+               <div class="line" id="id5">
+                <div id="obj" class="obj5"></div>
+            </div>
+             <div class="line" id="id6">
+                 <div id="obj"class="obj6"></div>
+             </div>
+              <div class="line" id="id7">
+                 <div id="obj"class="obj7"></div>
+              </div>
+               <div class="line" id="id8">
+                 <div id="obj"class="obj8"></div>
+               </div>
+
+        </div>
+   </div> 
+   <div id="btn">ATUALIZAR PAGINA</div>
+   <script>
+
+    let btn = document.querySelector('#btn')
+    btn.style.width = '100px'
+    btn.style.height = '30px'
+    btn.style.background = '#fff'
+    btn.style.borderRadius = '10px'
+    btn.style.fontSize = '10px'
+    btn.style.textAlign = 'center'
+    btn.style.color= '#777'
+    btn.style.padding= '5px'
+   
+   
+    btn.addEventListener('click',()=>{
+        window.location.reload(true)
+ 
+    })
+
+   </script>
+</body>
+</html>
